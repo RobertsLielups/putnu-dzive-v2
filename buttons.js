@@ -1,0 +1,48 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".vote-btn");
+
+    buttons.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault(); // stop link from jumping
+
+            // Generate fake percentages (they always add to 100)
+            const vistaPercent = Math.floor(Math.random() * 41) + 30; // 30–70
+            const olaPercent = 100 - vistaPercent;
+
+            const choice = this.dataset.vote;
+
+            if (choice === "vista") {
+                this.textContent = `vista 🐔 — ${vistaPercent}%`;
+            } else if (choice === "ola") {
+                this.textContent = `ola 🥚 — ${olaPercent}%`;
+            }
+
+            // IMPORTANT: we do NOT touch the other button, so only one shows %
+        });
+    });
+});
+const photos = [
+    "eagle.jpg",
+    "family.jpg",
+    "paris.jpg",
+    "https://picsum.photos/700/400?random=4"
+  ];
+
+  let index = 0;
+
+  const img = document.getElementById("gallery-photo");
+  const prev = document.getElementById("prev-btn");
+  const next = document.getElementById("next-btn");
+
+  prev.addEventListener("click", function (e) {
+    e.preventDefault(); // STOP ANY PAGE MOVEMENT
+    index = (index - 1 + photos.length) % photos.length;
+    img.src = photos[index];
+  });
+
+  next.addEventListener("click", function (e) {
+    e.preventDefault(); // STOP ANY PAGE MOVEMENT
+    index = (index + 1) % photos.length;
+    img.src = photos[index];
+  });
+  
