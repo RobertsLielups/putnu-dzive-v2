@@ -27,12 +27,12 @@
           </button></a>
       </form>
       <nav class="flex flex-1 items-center justify-end gap-4 text-sm">
-        <a href="#sakums"
+        <a href="/"
           class="group inline-flex items-center gap-1 font-semibold text-amber-700 transition hover:text-violet-600">
           <span class="opacity-0 transition group-hover:opacity-100" aria-hidden="true">🐦‍⬛</span>
           Sākums
         </a>
-        <a href="#par-mums"
+        <a href="/"
           class="group inline-flex items-center gap-1 font-semibold text-amber-700 transition hover:text-violet-600">
           <span class="opacity-0 transition group-hover:opacity-100" aria-hidden="true">🐦‍⬛</span>
           Par mums
@@ -174,31 +174,31 @@
 
     <section class="bg-slate-50 py-14">
       <div class="mx-auto max-w-4xl px-4">
-        <h2 class="text-3xl font-bold text-slate-900">
+        <h2 class="text-4xl font-bold text-slate-900">
           Vai zināji?
         </h2>
         <p class="mt-3 text-slate-600">
           Ka putni netiek romantizēti kā brīvības simbols, bet gan kā debesu birokrāti. 
         </p>
         <ul class="mt-6 list-[square] space-y-2 pl-6 text-slate-700">
-          <li><a href="https://www.uzdevumi.lv/p/biologija/8-klase/putni-12093/putnu-uzbuve-un-funkcijas-12094/re-15998c77-efcd-4c66-bfda-a1ef498f0d99" class="text-blue-900">Putnu vairošanas Latvijā</a></li>
-          <li><a href="https://lv.wikipedia.org/wiki/Putnu_ekolo%C4%A3ija" class="text-blue-900">Ekoloģija</a></li>
-          <li><a href="https://dabasdati.lv/lv/cat/443/" class="text-blue-900">Tiešraides kameras</a></li>
+          <li><a href="https://www.uzdevumi.lv/p/biologija/8-klase/putni-12093/putnu-uzbuve-un-funkcijas-12094/re-15998c77-efcd-4c66-bfda-a1ef498f0d99" target="_blank" class="text-blue-900">Putnu vairošanas Latvijā</a></li>
+          <li><a href="https://lv.wikipedia.org/wiki/Putnu_ekolo%C4%A3ija" target="_blank" class="text-blue-900">Ekoloģija</a></li>
+          <li><a href="https://dabasdati.lv/lv/cat/443/" target="_blank" class="text-blue-900">Tiešraides kameras</a></li>
         </ul>
         <div class="mt-6 overflow-hidden rounded-xl border-2 border-blue-500">
           <table class="w-full text-left text-sm text-slate-800">
             <thead class="bg-blue-50 text-blue-900">
               <tr>
-                <th class="px-4 py-2">s</th>
-                <th class="px-4 py-2">divi</th>
-                <th class="px-4 py-2">trīs</th>
+                <th class="px-4 py-2">Putnu suga</th>
+                <th class="px-4 py-2">Potenciāls</th>
+                
               </tr>
             </thead>
             <tbody>
               <tr class="even:bg-blue-50/40">
-                <td class="px-4 py-2">četri</td>
-                <td class="px-4 py-2">pieci</td>
-                <td class="px-4 py-2">seši</td>
+                <td class="px-4 py-2">Sikspārņu piekūns</td>
+                <td class="px-4 py-2">5</td>
+                
               </tr>
             </tbody>
           </table>
@@ -208,21 +208,46 @@
   </main>
 
   <footer id="kontakti" class="bg-slate-900 py-10 text-white">
-    <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:flex-row sm:items-center sm:justify-between">
-      <a href="/">
-      </a <h3 class="text-xl font-semibold">Kontakti</h3>
-      <p class="mt-2 text-sm">
-        <span class="font-semibold">E-pasts:</span> juris.putns@gmail.com
+  <div class="mx-auto max-w-6xl px-4">
+    <!-- Top row: title + contact info -->
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+      <div>
+        <h3 class="text-2xl font-semibold">Kontakti</h3>
+        <p class="mt-2 text-sm text-slate-300">
+          Ja ir jautājumi par putniem, droši sazinies.
+        </p>
+      </div>
+
+      <div class="space-y-2 text-sm">
+        <p>
+          <span class="font-semibold">E-pasts:</span>
+          <a href="mailto:juris.putns@gmail.com"
+             class="text-orange-400 hover:text-orange-300">
+            juris.putns@gmail.com
+          </a>
+        </p>
+        <p>
+          <span class="font-semibold">Telefons:</span>
+          <a href="tel:22020202"
+             class="text-orange-400 hover:text-orange-300">
+            22020202
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom row: copyright -->
+    <div class="mt-8 border-t border-slate-700 pt-4 flex flex-col gap-2 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <p>
+        © <span id="year"></span> Putnu dzīve. Visas tiesības aizsargātas.
       </p>
-      <p class="text-sm">
-        <span class="font-semibold">Telefons:</span> 22020202
+      <p>
+        Izveidoja Juris Putns
       </p>
     </div>
-    <p class="text-sm text-slate-300">
-      © <span id="year"></span> Putnu dzīve. Visas tiesības aizsargātas.
-    </p>
-    </div>
-  </footer>
+  </div>
+</footer>
+
   <div class="bg-blue-500 text-center">
     Izstrādāja: Roberts Lielups
   </div>
