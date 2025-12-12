@@ -21,28 +21,35 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-const photos = [
-    "eagle.jpg",
-    "family.jpg",
-    "paris.jpg",
-    "https://picsum.photos/700/400?random=4"
-  ];
+document.addEventListener("DOMContentLoaded", function () {
+    const photos = [
+      "eagle.jpg",
+      "family.jpg",
+      "paris.jpg",
+      "papgailu.jpg"
+    ];
 
-  let index = 0;
+    let index = 0;
 
-  const img = document.getElementById("gallery-photo");
-  const prev = document.getElementById("prev-btn");
-  const next = document.getElementById("next-btn");
+    const img = document.getElementById("gallery-photo");
+    const prev = document.getElementById("prev-btn");
+    const next = document.getElementById("next-btn");
 
-  prev.addEventListener("click", function (e) {
-    e.preventDefault(); // STOP ANY PAGE MOVEMENT
-    index = (index - 1 + photos.length) % photos.length;
-    img.src = photos[index];
-  });
+    if (!img || !prev || !next) {
+      console.error("Gallery elements not found – check your IDs.");
+      return;
+    }
 
-  next.addEventListener("click", function (e) {
-    e.preventDefault(); // STOP ANY PAGE MOVEMENT
-    index = (index + 1) % photos.length;
-    img.src = photos[index];
+    prev.addEventListener("click", function (e) {
+      e.preventDefault();
+      index = (index - 1 + photos.length) % photos.length;
+      img.src = photos[index];
+    });
+
+    next.addEventListener("click", function (e) {
+      e.preventDefault();
+      index = (index + 1) % photos.length;
+      img.src = photos[index];
+    });
   });
   

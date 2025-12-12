@@ -21,7 +21,7 @@
       </div>
       <form class="relative hidden sm:flex" aria-label="Meklēt">
         <input type="text" placeholder="Meklēt"
-          class="w-32 rounded-full border border-amber-200 bg-white/70 px-4 py-1 text-sm text-slate-700 outline-none transition focus:w-48 focus:border-amber-400 focus:bg-white" />
+          class="w-64 rounded-full border border-amber-200 bg-white/70 px-4 py-1 text-sm text-slate-700 outline-none transition focus:w-48 focus:border-amber-400 focus:bg-white" />
         <a href="/"><button type="submit" class="absolute right-1 top-1 rounded-full bg-white-500 p-1 text-white">
             <img src="search.png" alt="meklēt" class="h-3.5 w-3.5 hover: cursor-pointer" width="13" height="13" />
           </button></a>
@@ -145,45 +145,51 @@
 
     <section class="bg-white py-12">
       <div class="mx-auto max-w-5xl px-4">
-        <div class="relative overflow-hidden rounded-2xl bg-slate-900 text-white shadow-lg">
-          <img id="gallery-photo" src="https://picsum.photos/700/400" alt="Galerija"
-            class="h-80 w-full object-cover opacity-80" />
-          <button id="prev-btn"
-            class="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/0 p-3 text-slate-900 shadow transition hover:bg-white"
-            aria-label="Iepriekšējais">
-            ⬅️
-          </button>
+    <div class="relative overflow-hidden rounded-2xl bg-slate-900 text-white shadow-lg">
+      <img
+        id="gallery-photo"
+        src="eagle.jpg"
+        alt="Galerija"
+        class="h-80 w-full object-cover opacity-80"
+      />
 
-          <button id="next-btn"
-            class="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/0 p-3 text-slate-900 shadow transition hover:bg-white"
-            aria-label="Nākamais">
-            ➡️
-          </button>
+      <button
+        id="prev-btn"
+        class="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/0 p-3 text-slate-900 shadow transition hover:bg-white/20"
+        aria-label="Iepriekšējais">
+        ⬅️
+      </button>
 
-        </div>
-      </div>
+      <button
+        id="next-btn"
+        class="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/0 p-3 text-slate-900 shadow transition hover:bg-white/20"
+        aria-label="Nākamais">
+        ➡️
+      </button>
+    </div>
+  </div>
     </section>
 
+    
 
     <section class="bg-slate-50 py-14">
       <div class="mx-auto max-w-4xl px-4">
         <h2 class="text-3xl font-bold text-slate-900">
-          Virsraksts
+          Vai zināji?
         </h2>
         <p class="mt-3 text-slate-600">
-          This is a slightly longer line of text, created to be just a bit
-          extended.
+          Ka putni netiek romantizēti kā brīvības simbols, bet gan kā debesu birokrāti. 
         </p>
         <ul class="mt-6 list-[square] space-y-2 pl-6 text-slate-700">
-          <li>viens</li>
-          <li>divi</li>
-          <li>trīs</li>
+          <li><a href="https://www.uzdevumi.lv/p/biologija/8-klase/putni-12093/putnu-uzbuve-un-funkcijas-12094/re-15998c77-efcd-4c66-bfda-a1ef498f0d99" class="text-blue-900">Putnu vairošanas Latvijā</a></li>
+          <li><a href="https://lv.wikipedia.org/wiki/Putnu_ekolo%C4%A3ija" class="text-blue-900">Ekoloģija</a></li>
+          <li><a href="https://dabasdati.lv/lv/cat/443/" class="text-blue-900">Tiešraides kameras</a></li>
         </ul>
         <div class="mt-6 overflow-hidden rounded-xl border-2 border-blue-500">
           <table class="w-full text-left text-sm text-slate-800">
             <thead class="bg-blue-50 text-blue-900">
               <tr>
-                <th class="px-4 py-2">viens</th>
+                <th class="px-4 py-2">s</th>
                 <th class="px-4 py-2">divi</th>
                 <th class="px-4 py-2">trīs</th>
               </tr>
